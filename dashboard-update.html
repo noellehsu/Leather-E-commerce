@@ -44,6 +44,7 @@
 
   <div class="container-fluid mt-4 main">
 
+    <!-- 四個框框並排 -->
     <div class="row">
       <div class="col-lg-3 col-6">
         <div class="card rounded-0 h-100">
@@ -96,6 +97,7 @@
       </div>
     </div>
 
+    <!-- 目前線上人數+新進訂單 -->
     <div class="row mt-4">
       <div class="col-lg-4 col-6">
         <div class="card rounded-0 h-100">
@@ -122,7 +124,7 @@
                 <th>來源</th>
                 <th>姓名</th>
                 <th>貨品</th>
-                <th width="100">價格</th>
+                <th width="100" class="text-right">價格</th>
               </tr>
             </thead>
             <tbody>
@@ -130,31 +132,31 @@
                 <td>官網</td>
                 <td>麥肯錫</td>
                 <td>皮包</td>
-                <td>3,000</td>
+                <td class="text-right">3,000</td>
               </tr>
               <tr>
                 <td>官網</td>
                 <td>麥肯錫</td>
                 <td>長夾</td>
-                <td>2,000</td>
+                <td class="text-right">2,000</td>
               </tr>
               <tr>
                 <td>官網</td>
                 <td>麥肯錫</td>
                 <td>零錢包</td>
-                <td>1,500</td>
+                <td class="text-right">1,500</td>
               </tr>
               <tr>
                 <td>臉書</td>
                 <td>麥肯錫</td>
                 <td>後背包</td>
-                <td>2,000</td>
+                <td class="text-right">2,000</td>
               </tr>
             </tbody>
             <tfoot>
               <tr>
-                <td colspan="3">總營收</td>
-                <td>10,500</td>
+                <td colspan="3" class="text-right">總營收</td>
+                <td class="text-right">10,500</td>
               </tr>
             </tfoot>
           </table>
@@ -164,6 +166,7 @@
 
     </div>
 
+    <!-- 用戶來源+瀏覽器 -->
     <div class="row mt-4">
       <!-- 左邊的長條圖 -->
       <section class="col-lg-8 col-6">
@@ -206,6 +209,7 @@
       </section>
     </div>
 
+    <!-- 月營運狀態(自成一個Card) -->
     <div class="card rounded-0 mt-4">
       <div class="card-header">月營運狀態</div>
       <div class="card-body">
@@ -229,95 +233,336 @@
             <a href="" class="btn btn-outline-secondary btn-sm">訂單管理</a>
           </div>
         </div>
+        <table class="table table-responsive">
+          <!--table-responsive加上RWD -->
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th>訂單數</th>
+              <th>退費數</th>
+              <th>出貨數</th>
+              <th>有問題貨品</th>
+              <th width="200" class="text-right">營業額</th>
+              <th width="200" class="text-right">淨利潤</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>9/1</td>
+              <td>300</td>
+              <td>1</td>
+              <td>250</td>
+              <td>3</td>
+              <td class="text-right">256,000</td>
+              <td class="text-right">168,000</td>
+            </tr>
+            <tr>
+              <td>9/2</td>
+              <td>300</td>
+              <td>1</td>
+              <td>250</td>
+              <td>3</td>
+              <td class="text-right">256,000</td>
+              <td class="text-right">168,000</td>
+            </tr>
+            <tr>
+              <td>9/3</td>
+              <td>300</td>
+              <td>1</td>
+              <td>250</td>
+              <td>3</td>
+              <td class="text-right">256,000</td>
+              <td class="text-right">168,000</td>
+            </tr>
+            <tr>
+              <td>9/4</td>
+              <td>300</td>
+              <td>1</td>
+              <td>250</td>
+              <td>3</td>
+              <td class="text-right">256,000</td>
+              <td class="text-right">168,000</td>
+            </tr>
+            <tr>
+              <td>9/5</td>
+              <td>300</td>
+              <td>1</td>
+              <td>250</td>
+              <td>3</td>
+              <td class="text-right">256,000</td>
+              <td class="text-right">168,000</td>
+            </tr>
+            <tr>
+              <td>9/6</td>
+              <td>300</td>
+              <td>1</td>
+              <td>250</td>
+              <td>3</td>
+              <td class="text-right">256,000</td>
+              <td class="text-right">168,000</td>
+            </tr>
 
- <table class="table table-responsive"> <!--table-responsive加上RWD -->
-    <thead>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="6" class="text-right">月總營收</td> <!-- colspan="6"表示合併六個欄位 -->
+              <td>3,750,500</td>
+            </tr>
+            <tr>
+              <td colspan="6" class="text-right">月總淨利潤</td>
+              <td>2,140,500</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+    <!-- 檢視訂單狀況 -->
+    <hr>
+    <div class="row d-flex justify-content-center">
+      <h3 class="p-2 mb-2 mt-3 bg-light">檢視訂單狀況</h3>
+    </div>
+
+    <div class="row mt-3 d-flex justify-content-between">
+      <div class="col-lg-3">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Search-for" data-toggle="tooltip" data-placement="top" 
+            title="按下enter快速搜尋">
+          <div class="input-group-append">
+            <button class="btn btn-secondary" type="button" id="button-addon2">Go!</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-1">
+        <button class="btn btn-primary" data-toggle="modal"  data-title="快速下單" data-target="#editModal">快速下單</button>
+      </div>
+    </div>
+
+
+    <table class="table table-responsive table-hover">
+      <thead>
         <tr>
-          <th>日期</th>
-          <th>訂單數</th>
-          <th>退費數</th>
-          <th>出貨數</th>
-          <th>有問題貨品</th>
-          <th width="200" class="text-right">營業額</th>
-          <th width="200" class="text-right">淨利潤</th>
+          <th width="10">#</th> 
+          <th width="120">品項</th>
+          <th width="120">Name</th>
+          <th width="200">Email</th>
+          <th width="120">狀態</th>
+          <th class="text-right" width="120">金額</th>
+          <th width="150" class="text-center">操作</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>9/1</td>
-          <td>300</td>
-          <td>1</td>
-          <td>250</td>
-          <td>3</td>
-          <td class="text-right">256,000</td>
-          <td class="text-right">168,000</td>
+          <th scope="row">1</th>
+          <td class="text-primary">超纖細肥皂 1盒</td>
+          <td>Mark
+            <span class="badge badge-danger">奧客</span>
+          </td>
+          <td>Mark@mail.com</td>
+          <td>已出貨</td>
+          <td class="text-right">NT$ 899</td>
+          <td class="text-center">
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+              <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#editModal" data-backdrop="static" data-title="超纖細肥皂 1盒 訂單">編輯</button>
+              <button type="button" class="btn btn-outline-secondary">查看</button>
+  
+              <div class="btn-group" role="group">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">其他</button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <a class="dropdown-item" href="#">操作紀錄</a>
+                  <a class="dropdown-item" href="#">資料匯出</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-danger" href="#removeModal" data-toggle="modal" data-title="超纖細肥皂 1盒 訂單">刪除訂單</a>
+                </div>
+              </div>
+            </div>
+          </td>
         </tr>
-        <tr>
-          <td>9/2</td>
-          <td>300</td>
-          <td>1</td>
-          <td>250</td>
-          <td>3</td>
-          <td class="text-right">256,000</td>
-          <td class="text-right">168,000</td>
-        </tr>
-        <tr>
-          <td>9/3</td>
-          <td>300</td>
-          <td>1</td>
-          <td>250</td>
-          <td>3</td>
-          <td class="text-right">256,000</td>
-          <td class="text-right">168,000</td>
-        </tr>
-        <tr>
-          <td>9/4</td>
-          <td>300</td>
-          <td>1</td>
-          <td>250</td>
-          <td>3</td>
-          <td class="text-right">256,000</td>
-          <td class="text-right">168,000</td>
-        </tr>
-        <tr>
-          <td>9/5</td>
-          <td>300</td>
-          <td>1</td>
-          <td>250</td>
-          <td>3</td>
-          <td class="text-right">256,000</td>
-          <td class="text-right">168,000</td>
-        </tr>
-        <tr>
-          <td>9/6</td>
-          <td>300</td>
-          <td>1</td>
-          <td>250</td>
-          <td>3</td>
-          <td class="text-right">256,000</td>
-          <td class="text-right">168,000</td>
-        </tr>
+        <tr class="table-danger">
+          <th scope="row">2</th>
+          <td class="text-primary">(保證)無泡泡沐浴乳 5罐</td>
+          <td>Jacob
+            <span class="badge badge-success">常客</span>
+          </td>
+          <td>Jacob@mail.com</td>
+          <td>
+            <span class="text-danger">缺貨</span>
+          </td>
+          <td class="text-right">NT$ 3,600</td>
+          <td class="text-center">
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+              <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#editModal" data-backdrop="static" data-title="超纖細肥皂 1盒 訂單">編輯</button>
+              <button type="button" class="btn btn-outline-secondary">查看</button>
+  
+              <div class="btn-group" role="group">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">其他</button>
 
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <a class="dropdown-item" href="#">操作紀錄</a>
+                  <a class="dropdown-item" href="#">資料匯出</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-danger" href="#removeModal" data-toggle="modal" data-title="超纖細肥皂 1盒 訂單">刪除訂單</a>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td class="text-primary">防滑燈罩 100個</td>
+          <td>Larry</td>
+          <td>Larry@mail.com</td>
+          <td>已出貨</td>
+          <td class="text-right">NT$ 14,060</td>
+          <td class="text-center">
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+              <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#editModal" data-backdrop="static" data-title="超纖細肥皂 1盒 訂單">編輯</button>
+              <button type="button" class="btn btn-outline-secondary">查看</button>
+  
+              <div class="btn-group" role="group">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">其他</button>
+
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <a class="dropdown-item" href="#">操作紀錄</a>
+                  <a class="dropdown-item" href="#">資料匯出</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-danger" href="#removeModal" data-toggle="modal" data-title="超纖細肥皂 1盒 訂單">刪除訂單</a>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        
+        <tr>
+          <th scope="row" colspan="7">...</th>
+        </tr>
+        <tr>
+          <th scope="row" colspan="7">...</th>
+        </tr>
+        <tr>
+          <th scope="row" colspan="7">...</th>
+        </tr>
+        <tr>
+          <th scope="row" colspan="7">...</th>
+        </tr>
+        <tr>
+          <th scope="row" colspan="7">...</th>
+        </tr>
       </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="6" class="text-right">月總營收</td>  <!-- colspan="6"表示合併六個欄位 -->
-          <td>3,750,500</td>
-        </tr>
-        <tr>
-          <td colspan="6" class="text-right">月總淨利潤</td>
-          <td>2,140,500</td>
-        </tr>
-      </tfoot>
-</table>
+    </table>
+
+<!-- 開始做困難的Modal-->
 
 
 
-
-
+<!-- 編輯跳出的Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="name">用戶名稱</label>
+            <input type="text" class="form-control" id="name" placeholder="Mark">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" value="Mark@mail.com" placeholder="name@example.com">
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <div class="col">
+                <label for="text">品項</label>
+                <input type="text" readonly="" value="超纖細肥皂 1盒">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col">
+                <label for="count">*數量</label>
+                <select class="custom-select" id="count">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
+  </div>
+</div>
+
+<!-- 刪除跳出的Modal -->
+<div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="name">用戶名稱</label>
+            <input type="text" class="form-control" id="name" placeholder="Mark">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" value="Mark@mail.com" placeholder="name@example.com">
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <div class="col">
+                <label for="text">品項</label>
+                <input type="text" readonly="" value="超纖細肥皂 1盒">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col">
+                <label for="count">*數量</label>
+                <select class="custom-select" id="count">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-danger">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -352,12 +597,27 @@
 
       // 編輯的 Modal 事件
       $('#editModal').on('show.bs.modal', function (event) {
-
+        var btn = $(event.relatedTarget); //連到哪個按鈕
+        var title = btn.data('title');  //連結到data-title="快速下單"
+        var modal = $(this);   //要打開哪個modal
+        modal.find('.modal-title').text("編輯"+title); //讓modal-title去data-title屬性
       });
 
-      $('#removeModal').on('show.bs.modal', function (event) {
 
+
+
+
+
+
+      // 刪除的 Modal 事件
+      $('#removeModal').on('show.bs.modal', function (event) {
+        var btn = $(event.relatedTarget); //連到哪個按鈕
+        var title = btn.data('title');  //連結到data-title="快速下單"
+        var modal = $(this);   //要打開哪個modal
+        modal.find('.modal-title').text("刪除"+title); //讓modal-title去data-title屬性
       })
+
+
     });
   </script>
   <script>
