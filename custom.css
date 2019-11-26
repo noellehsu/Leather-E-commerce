@@ -1,0 +1,36 @@
+    
+    body {        
+        font-family: 'Noto Sans TC', sans-serif;
+        line-height: 1.15;   
+      }
+    
+    /* 右上角購物車的小icon */
+    .btn-cart{
+        background-color: transparent;
+        position: relative;
+    }
+    .btn-cart .badge{
+        position: absolute;
+        top:-1px;
+        right: -1px;
+    }
+    .dropdown-cart{
+        right:0;
+        left: auto;
+    }
+    .jumbotron-bg{
+        background-image: url(img/大圖4.jpg);
+        background-size:cover ;
+        background-position: center center;
+        min-height: 400px;
+    }
+    .bg-lighter{
+        background-color: rgba(255,255,255,.35);
+        min-width: 80px;
+    }
+    .card{
+        max-width: 250px;  /* 沒加上這一行的話，後背包商品只有兩個，card-group會把兩張card做成滿版 */
+    }
+    .alert-rounded{
+        border-radius: 50px;
+    }

@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>土屋鞄製造所皮件店</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href=custom.css>
+
+  <!--使用fontawesome小圖示的認證-->
+  <script src="https://kit.fontawesome.com/7c53150f2f.js" crossorigin="anonymous"></script>
+  <!-- 引用思源黑體 -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!-- headers -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">土屋鞄製造所皮件店</a>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    <!-- 購物車內的數量 (Button 內包含 icon, 數量 badge) -->
+    <div class="dropdown ml-auto">
+      <button class="btn btn-sm btn-cart" data-toggle="dropdown" data-flip="false">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="badge badge-danger">9</span>
+      </button>
+      <div class="dropdown-menu dropdown-cart" style="min-width: 300px" data-offset="400">
+        <div class="px-4 py-3">
+          <h6>已選擇商品</h6>
+          <table class="table table-sm">
+            <tbody>
+              <tr>
+                <td class="align-middle text-center">
+                  <a href="#removeModal" class="text-muted" data-toggle="modal" data-title="刪除 金牌西裝 1 件">
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                  </a>
+                </td>
+                <td class="align-middle text-center">Tone Oilnume 兩用托特包</td>
+                <td class="align-middle">1件</td>
+                <td class="align-middle">$10020</td>
+              </tr>
+              <tr>
+                <td class="align-middle text-center">
+                  <a href="#removeModal" class="text-muted" data-toggle="modal" data-title="刪除 金牌女裝 1 件">
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                  </a>
+                </td>
+                <td class="align-middle text-center">Diario 迷你隨行斜肩袋</td>
+                <td class="align-middle ">1件</td>
+                <td class="align-middle">$4800</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <a href="shoppingCart-checkout.html" class="btn btn-primary btn-block">結帳去 </a>
+
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="jumbotron jumbotron-fluid jumbotron-bg">
+    <div class="bg-lighter p-3">
+      <h3>關於土屋鞄製造所</h3>
+      <p class="lead">土屋鞄製造所 1965
+        年創立於日本，堅持所有皮革製品在日本當地進行製造生產。為了更加貼近使用者的日常需求，職人們將嚴謹的匠藝精神逐一投入其中，致力打造出最舒適、耐用的皮革製品。我們期望您能在生活裡愛用職人親手製作的皮革物品，相信在未來的五年、十年中，皮革製品都將會是您的最佳夥伴。
+      </p>
+    </div>
+  </div>
+
+
+
+  <!-- 列表頁 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+                
+        <!-- 左側選單 (List group) -->
+
+
+        <div class="list-group" id="myList" role="tablist">
+          <h3>產品分類</h3>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#pane-1" role="tab">側背包</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#pane-2" role="tab">後背包</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#pane-3" role="tab">長夾</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#pane-4" role="tab">零錢包</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#pane-5" role="tab">名片夾</a>
+
+        </div>
+      </div>
+
+      <!-- 主要商品列表 (Card) -->
+      <div class="col-md-10">
+
+
+        <!-- 側背包 -->
+        <div class="tab-content mt-5">
+          <div class="tab-pane active" id="pane-1" role="tabpanel">
+            <div class="card-group ">
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/側背包/Plota 防水兩用斜背包.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Plota 防水兩用斜背包</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+
+
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/側背包/Tone Oilnume 兩用托特包.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Tone Oilnume 兩用托特包</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+
+
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/側背包/Clarte 流蘇迷你箱型包.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Clarte 流蘇迷你箱型包</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-group mt-3">
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/側背包/Diario 迷你隨行斜肩袋.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Diario 迷你隨行斜肩袋</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/側背包/Tone Oilnume 拉鍊斜背包.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Tone Oilnume 拉鍊斜背包</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/側背包/Tone Oilnume 迷你郵差包.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Tone Oilnume 迷你郵差包</h4>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 後背包 -->
+          <div class="tab-pane active" id="pane-2" role="tabpanel">
+            <div class="card-group mt-3">
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/後背包/Tone Oilnume 中型後背包.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Tone Oilnume 中型後背包</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/後背包/Tone Oilnume 後背包.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Tone Oilnume 後背包</h4>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- 長夾 -->
+          <div class="tab-pane active" id="pane-3" role="tabpanel">
+            <div class="card-group mt-3">
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/長夾/Belchord 長夾.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Belchord 長夾</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/長夾/Diario 長夾.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Diario 長夾</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+
+
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/長夾/Tone Oilnume 纏繞式長夾.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Tone Oilnume 纏繞式長夾</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card-group mt-3">
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/長夾/Tone Oilnume 蛙嘴式零錢長夾.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Tone Oilnume 蛙嘴式零錢長夾</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+
+
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/長夾/Urbano 長皮夾.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Urbano 長皮夾</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- 零錢包 -->
+          <div class="tab-pane active" id="pane-4" role="tabpanel">
+            <div class="card-group mt-3">
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/零錢包/Belchord零錢包.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Belchord零錢包</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/零錢包/Bridle方形零錢包.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Bridle方形零錢包</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+
+
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/零錢包/Diario 雙釦式零錢包.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Diario 雙釦式零錢包</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card-group mt-3">
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/零錢包/Tone Oilnume 蛙嘴式迷你零錢包.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Tone Oilnume 蛙嘴式迷你零錢包</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+
+
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/零錢包/Tone Oilnume 蛙嘴式零錢袋.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Tone Oilnume 蛙嘴式零錢袋</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/零錢包/Urbano零錢包.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Urbano零錢包</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+          <!-- 名片夾 -->
+          <div class="tab-pane active" id="pane-5" role="tabpanel">
+            <div class="card-group mt-3">
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/名片夾/Bridle 名片夾.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Bridle 名片夾</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/名片夾/Clarte 信封名片夾.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Clarte 信封名片夾</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+
+
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/名片夾/Cordovan 馬臀皮名片夾.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Cordovan 馬臀皮名片夾</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card-group mt-3">
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/名片夾/Cordovan 馬臀皮票卡套.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Cordovan 馬臀皮票卡套</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+
+
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/名片夾/Urbano 名片夾.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Urbano 名片夾</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+
+              <div class="card mr-5">
+                <img class="card-img-top" src="img/名片夾/Urbano 拉鍊卡片夾.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Urbano 拉鍊卡片夾</h5>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block">購買去</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- pagination -->
+        <div class="d-flex justify-content-center mt-5">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- tab-content end -->
+  <!-- 列表頁結束 -->
+  <br>
+  <br>
+  <br>
+
+
+  <!-- 產品頁面 -->
+  <div class="container">
+    <nav aria-label="breadcrumb" role="navigation">
+      <ol class="breadcrumb bg-transparent pl-0">
+        <!-- bg-transparent底色就變不見，pl-0讓breadcrumb貼左對齊 -->
+        <li class="breadcrumb-item active">
+          <a href="#">首頁</a>
+        </li>
+        <li class="breadcrumb-item active">
+          <a href="#">高級皮件</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Tone Oilnume 後背包</li>
+      </ol>
+    </nav>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="sticky-top" style="top:30px;">
+          <!--sticky-top不能直接放在col-md-4裡面 -->
+          <h1 class="h2">Tone Oilnume 後背包<br><small>(聖誕節限定版)</small></h1>
+          <!-- 原價跟特價顯示 -->
+          <div class="d-flex justify-content-end">
+            <del><span class="text-muted">售價 $1299</span></del>
+            <div class="h3 text-danger"><small>網路價 NT$</small><strong>520</strong></div>
+          </div>
+
+          <!-- 尺寸選擇 -->
+          <hr> 尺寸:
+          <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-outline-secondary ">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked=""> SM
+            </label>
+            <label class="btn btn-outline-secondary ">
+              <input type="radio" name="options" id="option2"> M
+            </label>
+            <label class="btn btn-outline-secondary disabled">
+              <!--disabled加在class裡面表示不給按 -->
+              <input type="radio" name="options" id="option3" disabled=""> L
+            </label>
+            <label class="btn btn-outline-secondary ">
+              <input type="radio" name="options" id="option4"> XL
+            </label>
+          </div>
+
+          <div class="input-group mt-3">
+            <select name="" class="form-control mr-1">
+              <option value="1">1 件</option>
+              <option value="2">2 件</option>
+              <option value="3">3 件</option>
+            </select>
+            <a href="shoppingCart-checkout.html" class="btn btn-secondary">
+              <i class=" " aria-hidden="true"></i> 加入購物車
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-1">
+      </div>
+
+      <div class="col-md-7">
+        <h2>灑上冬日霜雪的聖誕限定商品 : Froschia系列</h2>
+        <p class="😵😃">飄散著聖誕夜的靜謐氛圍, 灑上白色霜雪般, 具有豐富皮革表情的「Froschia」, 點綴起今年的聖誕節, 推出 3 款聖誕限定商品, 在細雪飄落的時刻, 請一起感受這獨一無二的......
+        </p>
+
+        <img src="img/Model.jpg" style="width: 700px;">
+        <h3 class="h5 text-center">溫潤的皮革質地</h3>
+
+        <img src="img/後背包/Tone Oilnume 後背包.jpg" style="width:580px;">
+        <h3 class="h5 text-center">揭開溫暖聖誕序曲</h3>
+
+        <img src="img/大圖3.jpg" style="width: 800px;">
+        <h4 class="h5 text-center">天然的柔軟質感、自然的皮革芳香,持續愛用就能擁有獨特韻味</h4>
+
+      </div>
+
+    </div>
+
+  </div>
+  <br>
+  <br>
+  <!-- 產品頁面結束 -->
+
+  <hr>
+
+  <!-- 輸入資料頁 -->
+  <div class="container main-contant py-5">
+    <h1 class="text-center text-secondary mb-3">購物完成，結帳頁面</h1>
+    <div class="form-row text-center">
+      <!--form-row跟row的不同是，form-row的間距比較小-->
+      <div class="col-12 col-sm">
+        <!--當視窗變很小時，會變成一列 -->
+        <div class="alert alert-success alert-rounded" role="alert">
+          <!-- alert-rounded用CSS做成圓邊 -->
+          1.輸入訂單資料
+        </div>
+      </div>
+      <div class="col-12 col-sm">
+        <div class="alert alert-light alert-rounded" role="alert">
+          2.金流付款
+        </div>
+      </div>
+      <div class="col-12 col-sm">
+        <div class="alert alert-light alert-rounded" role="alert">
+          3.完成
+        </div>
+      </div>
+    </div>
+
+    <!-- 顯示購物車細節 -->
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header">
+            <h6 class="mb-0">
+              <a data-toggle="collapse" href="#collapseOne">
+                顯示購物車細節
+              </a>            
+                <span class="">$520</span>
+            </h6>
+
+          </div>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <table class="table table-sm">
+            <thead>
+              <tr>
+                <th width="30"></th>
+                <th width="100"></th>
+                <th class="text-center">商品名稱</th>
+                <th width="80">數量</th>
+                <th width="80">小計</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="align-middle text-center">
+                  <a href="#removeModal" class="text-muted" data-toggle="modal" data-title="刪除 金牌西裝 1 件">
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                  </a>
+                </td>
+                <td>
+                  <img src="img/側背包/Tone Oilnume 兩用托特包.jpg" style="width: 150px;" class="img-thumbnail">
+                </td>
+                <td class="align-middle text-center">Tone Oilnume 兩用托特包</td>
+                <td class="align-middle">1件</td>
+                <td class="align-middle">$10020</td>
+              </tr>
+              <tr>
+                <td class="align-middle text-center">
+                  <a href="#removeModal" class="text-muted" data-toggle="modal" data-title="刪除 金牌女裝 1 件">
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                  </a>
+                </td>
+                <td>
+                    <img src="img/側背包/Diario 迷你隨行斜肩袋.jpg" style="width: 150px;" class="img-thumbnail">
+                </td>
+                <td class="align-middle text-center">Diario 迷你隨行斜肩袋</td>
+                <td class="align-middle ">1件</td>
+                <td class="align-middle">$4800</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="d-flex justify-content-center">
+      <div class="col-md-8">
+       
+
+        <!-- 訂購人資訊 -->
+        <h5 class="p-3 mb-2 mt-3 d-flex justify-content-center bg-light">
+          訂購人資訊
+        </h5>
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inlineFormInput">姓名</label>
+              <input type="text" class="form-control" id="inlineFormInput" placeholder="姓名" required="">
+              <div class="invalid-feedback">
+                請輸入姓名
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required="">
+              <div class="invalid-feedback">
+                請輸入正確的 Email
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputState">國家</label>
+              <select id="inputState" class="form-control" required="">
+                <option selected="">台灣</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputCity">城市</label>
+              <select name="" id="inputCity" class="form-control" required="">
+                <option value="台北市">台北市</option>
+                <option value="台南市">台南市</option>
+                <option value="高雄市">高雄市</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">郵遞區號</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+          </div>
+          <div class="form-row">
+              <div class="form-group col-md-12">
+            <label for="inputAddress">地址</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="重慶南路一段122號" required="">
+            <div class="invalid-feedback">
+              請輸入地址
+            </div>
+          </div>
+          </div>
+          <div class="form-row d-flex justify-content-end mt-3">
+            <a href="shoppingCart.html" class="btn btn-primary mr-2">繼續選購</a>
+            <button type="submit" class="btn btn-primary">確認付款</button>
+          </div>
+        </form>
+
+        <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+          (function () {
+            'use strict';
+
+            window.addEventListener('load', function () {
+              var form = document.getElementById('needs-validation');
+              form.addEventListener('submit', function (event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            }, false);
+          })();
+        </script>
+
+      </div>
+    </section>
+
+  </div>
+  <!-- 輸入資料頁 -->
+
+  <hr>
+
+  <!-- 結帳完成頁 -->
+  <div class="container main-contant py-5">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-8">
+        <h1 class="text-center text-secondary mb-3">六角血拼 結帳完成</h1>
+        <section class="d-flex justify-content-center">
+          <div class="col-12">
+            <div class="alert alert-success alert-rounded text-center" role="alert">
+              完成
+            </div>
+          </div>
+        </section>
+
+        <h5 class="p-3 mb-2 mt-3 d-flex justify-content-center bg-light">購買資訊</h5>
+        <table class="table table-sm mt-3">
+            <thead>
+              <tr>
+                <th width="30"></th>
+                <th width="100"></th>
+                <th class="text-center">商品名稱</th>
+                <th width="80">數量</th>
+                <th width="80">小計</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="align-middle text-center"></td>
+                <td>
+                  <img src="img/側背包/Tone Oilnume 兩用托特包.jpg" style="width: 150px;" class="img-thumbnail">
+                </td>
+                <td class="align-middle text-center">Tone Oilnume 兩用托特包</td>
+                <td class="align-middle">1件</td>
+                <td class="align-middle">$10020</td>
+              </tr>
+              <tr>
+                <td class="align-middle text-center"></td>
+                <td>
+                    <img src="img/側背包/Diario 迷你隨行斜肩袋.jpg" style="width: 150px;" class="img-thumbnail">
+                </td>
+                <td class="align-middle text-center">Diario 迷你隨行斜肩袋</td>
+                <td class="align-middle ">1件</td>
+                <td class="align-middle">$4800</td>
+              </tr>
+            </tbody>
+          </table>
+        
+
+
+
+
+        <hr>
+        <h5 class="p-3 mb-2 mt-3 d-flex justify-content-center bg-light">個人資料 </h5>
+        <table class="table table-sm mb-3">
+          <tbody>
+            <tr>
+              <th width="200">Email</th>
+              <td>ag3456***@gmail.com</td>
+            </tr>
+            <tr>
+              <th>姓名 </th>
+              <td>咬 * 手手</td>
+            </tr>
+            <tr>
+              <th>電話 </th>
+              <td>987654***</td>
+            </tr>
+            <tr>
+              <th>地址 </th>
+              <td>重慶南路一段122號</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- 結帳完成頁 -->
+
+
+  
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $('#removeModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget) // 選則當初觸發事件的按鈕
+        var title = button.data('title') // 使用 data-* 來取得特定內容
+
+        var modal = $(this)
+        modal.find('.modal-title').text('確認' + title) // 寫入資料
+      })
+    });
+
+
+
+    // tab-content的javascript程式碼
+    $(document).ready(function () {
+      $('#myList a').on('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+    });
+
+  </script>
+</body>
+
+</html>
