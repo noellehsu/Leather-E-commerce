@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>六角西餐廳</title>
+   <!-- 引用bootstrap CSS 4.3.1 版本-->
+   <link rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <link rel="stylesheet" href=custom.css>
+
+  <!--使用fontawesome小圖示的認證-->
+  <script src="https://kit.fontawesome.com/7c53150f2f.js" crossorigin="anonymous"></script>
+  <!-- 引用Google字體 -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="bg-secondary py-2">
+    <div class="container text-right">
+      <!--加上text-right讓兩個icon往右邊推 -->
+      <a href="#" class="text-white fab fa-facebook-square"></a>
+      <!--text-white可以把icon變成白色 -->
+      <a href="#" class="text-white fab fa-twitter"></a>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      土屋鞄製造所皮件店
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
+      aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            精緻皮件
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <a class="btn btn-outline-primary mr-2 text-primary" style="border-width: 3px;" data-toggle="modal"
+          data-target="#loginModal"  data-backdrop="static">登入</a>
+        <a class="btn btn-primary" style="border-width: 3px;" data-toggle="modal"
+          data-target="#registerModal"  data-backdrop="static">註冊</a>
+      </form>
+    </div>
+    </div>
+  </nav>
+
+
+  <div class="jumbotron jumbotron-fluid jumbotron-bg" style="display: block">
+    <div class="bg-lighter p-3">
+      <h3>關於土屋鞄製造所</h3>
+      <p class="lead">土屋鞄製造所 1965
+        年創立於日本，堅持所有皮革製品在日本當地進行製造生產。為了更加貼近使用者的日常需求，職人們將嚴謹的匠藝精神逐一投入其中，致力打造出最舒適、耐用的皮革製品。我們期望您能在生活裡愛用職人親手製作的皮革物品，相信在未來的五年、十年中，皮革製品都將會是您的最佳夥伴。
+      </p>
+    </div>
+  </div>
+
+  <section class="bg-info py-5 text-white">
+    <!--py-5讓上下留一點padding -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div>
+            <i class="fas fa-5x fa-shopping-bag mb-3"></i>
+          </div>
+          <h3>聖誕禮物型錄免費申請開始 </h3>
+          <p>
+            今年的土屋鞄聖誕禮物型錄, 繪上插畫家伊藤敦志的溫暖插畫, 將聖誕限定商品與適合做為禮物的皮革製品, 完整呈獻在型錄裡給您。即日起免費開放申請中......
+          </p>
+          <a href="#" class="btn btn-outline-info">了解更多</a>
+        </div>
+        <div class="col-lg-4">
+          <div>
+            <i class="fas fa-5x fa-camera-retro mb-3"></i>
+          </div>
+          <h4>灑上冬日霜雪的聖誕限定商品 : Froschia系列</h4>
+          <p>灑上白色霜雪般, 具有豐富皮革表情的「Froschia」, 點綴起今年的聖誕景致, 3 款聖誕限定商品 11 月 28 日開始販售, 在細雪飄落的時刻, 請一起感受獨一無二的...
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <div>
+            <i class="fas fa-5x fa-globe-asia mb-3"></i>
+          </div>
+          <h4>底部強化與針線縫邊</h4>
+          <p>將皮革重疊用於補強底部 , 同時發揮底釘作用。另外 ,「針線縫邊」也是設計重點。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container-fluid py-5 bg-light text-white" style="position: relative">
+    <!-- 絕對定位 -->
+    <div class="row">
+      <div class="col-md-5 bg-cover"
+        style="position: absolute; top: 0; bottom: 0;
+        background-image: url(https://images.unsplash.com/photo-1563976810606-122f98dbd543?=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80) ">
+      </div>
+    </div>
+    <div class="container">
+      <!--上面section預設text-white，md裝置以上的螢幕字體變黑色: text-md-dark 類別另外寫在custom.css-->
+      <div class="row d-flex justify-content-end text-md-dark">
+        <div class="col-md-7">
+          <h3>高大尚皮件店</h3>
+          <p>
+            遇到這些灰色道德地帶時，要到兩三年後才會比較有清楚的感受，而這正是為什麼西方公司會存活，作為一個年輕人，但是負責的人需要接受風險、喜歡冒險和願意負責。2，流感病毒攻心，春電展將開展，NBA明星周，低價電信資費戰，曼城主場連勝。
+          </p>
+          <a href="#" class="btn btn-outline-info">了解更多</a>
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <h4>像含羞草似的嬌柔</h4>
+              <p>
+                到體但費讀信會年：用大感這制不建事現給不家之：教臉認知了門。公球上的種力造天可屋智，業委兒，是電社，全式出名理本把天合以院要象參現設容機此、保友研始小天，是用是影破而真節候極同幾舉男院能有濟還。市的市政們長大你車防願還民，校有書以有總人國點權？
+              </p>
+            </div>
+            <div class="col-md-6">
+              <h4>老師可不可以補交</h4>
+              <p>
+                到體但費讀信會年：用大感這制不建事現給不家之：教臉認知了門。公球上的種力造天可屋智，業委兒，是電社，全式出名理本把天合以院要象參現設容機此、保友研始小天，是用是影破而真節候極同幾舉男院能有濟還。市的市政們長大你車防願還民，校有書以有總人國點權？
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- 如何這麼美味 -->
+  <section class="py-5">
+    <!--py-5把上下padding空間推開 -->
+    <div class="container">
+      <h2 class="text-center mb-5">如何這麼美味</h2>
+      <!--my-3把上下margin空間推開 -->
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-5">
+          <div class="d-flex">
+            <!-- 這個d-flex最好不要寫在上面那一行col的class裡面，最好獨立寫一個div -->
+            <div class="mr-3 text-info">
+              <i class="fas fa-utensils fa-4x"></i>
+            </div>
+            <div>
+              <h3>美艷的食材</h3>
+              <p>工作，那麼你至少得吃一對兒鯨魚……我身邊的朋友們啊，沒有錢，但又找不到出路．如果多吃魚可以補腦讓人變聰明的話，珍惜生活上帝還讓你活著，年老的時候，然後選中一張百元大鈔。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="d-flex">
+            <div class="mr-3 text-info">
+              <i class="fas fa-archway fa-4x"></i>
+            </div>
+
+            <div>
+              <h3>里隧道貫</h3>
+              <p>
+                呂明賜帶中華隊，Mark，禽流感驚爆，勸進不斷，新恐龍化石研究"雷克斯暴龍的叔公"。生，生，樹不要皮，年輕的時候，.人怕出名豬怕壯，睡你的老公，.人怕出名豬怕壯，可是已經晚了……請你以後不要在我面前說英文了。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-5">
+          <div class="d-flex">
+            <!-- 這個d-flex最好不要寫在上面那一行col的class裡面，最好獨立寫一個div -->
+            <div class="mr-3 text-info">
+              <i class="fas fa-hand-holding-heart fa-4x"></i>
+            </div>
+            <div>
+              <h3>是貝德花芬是槐格納</h3>
+              <p>再也不出聲不鬧：并且你有的是可驚的口味，不能怨，我見著的只你的遺像，就是你媽，他年紀雖則小，最有資格指證或相詮釋。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="d-flex">
+            <div class="mr-3 text-info">
+              <i class="fas fa-child fa-4x"></i>
+            </div>
+
+            <div>
+              <h3>我跳出計程車跑向大直美麗華</h3>
+              <p>星巴克，他到了，而這正是為什麼西方公司會存活，而隨著你慢慢長大變老並開始面對這些困難的選擇時，根據你和這三個主要地區員工談話和面試的經驗。"雷克斯暴龍的叔公"。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 嵌入地圖+個人資料填寫表單 -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- 嵌入地圖 把width改成100%，讓地圖符合響應式  -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14457.619399289706!2d121.5220316!3d25.0542638!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x26b961f84f343ada!2z5Zyf5bGL6Z6E6KO96YCg5omAIOWPsOWMl-W6lw!5e0!3m2!1szh-TW!2stw!4v1575010426887!5m2!1szh-TW!2stw"
+            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <div class="col-md-6">
+          <form action="" class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="username">姓名*</label>
+              <input type="text" class="form-control" id="username" placeholder="請輸入姓名" required>
+              <div class="invalid-feedback">
+                這邊不能空白喔
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="tel">電話*</label>
+              <input type="tel" class="form-control" id="tel" placeholder="請輸入電話號碼" required>
+              <div class="invalid-feedback">
+                這邊不能空白喔
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="請輸入Email" required>
+              <div class="invalid-feedback">
+                這邊不能空白喔
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="number">人數</label>
+              <input type="number" class="form-control" id="number" placeholder="請輸入人數" required>
+              <div class="invalid-feedback">
+                這邊不能空白喔
+              </div>
+            </div>
+            <!-- 兩個radio button -->
+            <div class="custom-control custom-radio">
+              <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio1">訂製皮件</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio2">現場選購</label>
+            </div>
+            <!-- 取消跟送出按鈕 -->
+            <div class="form-group">
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-secondary mr-1">取消</button>
+                <button type="submit" class="btn btn-primary">送出 </button>
+              </div>
+            </div>
+          </form>
+          <!-- 表單驗證的script -->
+          <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+              'use strict';
+              window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                  form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+          </script>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 p-5 bg-cover text-white"
+        style="background-image: url(https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)">
+        <div class="row">
+          <div class="col-md-9">
+            <h3>你便乖乖的把琴抱進你的床去，你是不認識你父親的</h3>
+            <p>
+              短暫的激情是不值錢的，年代的人還需要摔打，別人一定會聽你，但它只是一環，80年代的人不要跟70年代，別人可以拷貝我的模式，一個成功的創業者，東西得一點點幹，也要注重過程，千萬別告訴別人，賺錢模式越多越說明你沒有模式。
+            </p>
+            <a href="#" class="btn btn-outline-warning" style="border-width: 2px;">加入我們</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 p-5 bg-cover text-white"
+        style="background-image: url(https://tsuchiya-kaban-global.com/user_data/library-images-v5/2019xmas-catalog_froschia-limited/01.jpg)">
+        <div class="row">
+          <div class="col-md-9">
+            <h3>踏著浪，我和世界不一樣，太多堅持</h3>
+            <p>
+              一度剝落了的青春，寂寞的床偌大的房，我和我的倔強不能在shopping時候想你在路上會­遇見怎樣的穹蒼？戀人之間的時光，怎麼又是你，都騎虎難下了，唉呀，環境維護的話，發牢騷之前，打架了，大家不要吵架，我再也不逃了，我們回去了，謝謝，最恐怖的人，既然媽媽決定了，就算是死，辣辣的，一定很好吃。
+            </p>
+            <a href="#" class="btn btn-outline-warning" style="border-width: 2px;">時尚皮件</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- 登入Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="passwordHelpBlock" class="form-text text-muted">我們絕不會隨意將你的 email 給予第三者</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">密碼</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">記住帳號</label>
+                  </div>             
+        </div>
+        <div class="modal-footer">
+            <!-- class="mr-auto" 會往左推到底，不然本來是黏著右邊的兩個按鈕 -->
+          <a href="" class="mr-auto" data-dismiss="modal" data-toggle="modal"
+          data-target="#registerModal">來去註冊</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-outline-primary">登入</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 註冊Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-warning text-white">
+          <h5 class="modal-title" id="exampleModalLabel">註冊新帳號</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="passwordHelpBlock" class="form-text text-muted">我們絕不會隨意將你的 email 給予第三者</small>
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputPassword1">密碼</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">確認密碼</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+              <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">同意條款</label>
+                </div>
+        </div>
+        <div class="modal-footer">
+            <a href="" class="mr-auto" data-dismiss="modal" data-toggle="modal"
+            data-target="#loginModal">已經有帳號了?直接登入</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-outline-warning">註冊</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- footer -->  
+<footer id="aa-footer">
+    <!-- footer bottom -->
+    <div class="aa-footer-top p-5 mb-2 bg-dark text-white">
+     <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+          <div class="aa-footer-top-area">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div class="aa-footer-widget">
+                  <h3>Main Menu</h3>
+                  <ul class="aa-footer-nav" style="list-style-type:none">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Our Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="aa-footer-widget">
+                  <div class="aa-footer-widget">
+                    <h3>Knowledge Base</h3>
+                    <ul class="aa-footer-nav"  style="list-style-type:none">
+                      <li><a href="#">Delivery</a></li>
+                      <li><a href="#">Returns</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Discount</a></li>
+                      <li><a href="#">Special Offer</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="aa-footer-widget">
+                  <div class="aa-footer-widget">
+                    <h3>Useful Links</h3>
+                    <ul class="aa-footer-nav" style="list-style-type:none">
+                      <li><a href="#">Site Map</a></li>
+                      <li><a href="#">Search</a></li>
+                      <li><a href="#">Advanced Search</a></li>
+                      <li><a href="#">Suppliers</a></li>
+                      <li><a href="#">FAQ</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="aa-footer-widget">
+                  <div class="aa-footer-widget">
+                    <h3>Contact Us</h3>
+                    <address>
+                      <p> 25 Astor Pl, NY 10003, USA</p>
+                      <p><span class="fa fa-phone"></span>+1 212-982-4589</p>
+                      <p><span class="fa fa-envelope"></span>dailyshop@gmail.com</p>
+                    </address>
+                    <div class="aa-footer-social">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>    
+  <!-- / footer -->
+
+</body>
+
+</html>
