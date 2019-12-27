@@ -5,15 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>六角西餐廳</title>
-   <!-- 引用bootstrap CSS 4.3.1 版本-->
-   <link rel="stylesheet"
-   href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <title>Leather E-Commerce</title>
+  <!-- 引用bootstrap CSS 4.3.1 版本-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
- 
+
   <link rel="stylesheet" href=custom.css>
 
   <!--使用fontawesome小圖示的認證-->
@@ -63,9 +62,9 @@
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <a class="btn btn-outline-primary mr-2 text-primary" style="border-width: 3px;" data-toggle="modal"
-          data-target="#loginModal"  data-backdrop="static">登入</a>
-        <a class="btn btn-primary" style="border-width: 3px;" data-toggle="modal"
-          data-target="#registerModal"  data-backdrop="static">註冊</a>
+          data-target="#loginModal" data-backdrop="static">登入</a>
+        <a class="btn btn-primary" style="border-width: 3px;" data-toggle="modal" data-target="#registerModal"
+          data-backdrop="static">註冊</a>
       </form>
     </div>
     </div>
@@ -332,8 +331,9 @@
   </section>
 
 
-<!-- 登入Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- 登入Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header bg-primary text-white">
@@ -343,24 +343,23 @@
           </button>
         </div>
         <div class="modal-body">
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-                  <small id="passwordHelpBlock" class="form-text text-muted">我們絕不會隨意將你的 email 給予第三者</small>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">密碼</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">記住帳號</label>
-                  </div>             
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="passwordHelpBlock" class="form-text text-muted">我們絕不會隨意將你的 email 給予第三者</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">密碼</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">記住帳號</label>
+          </div>
         </div>
         <div class="modal-footer">
-            <!-- class="mr-auto" 會往左推到底，不然本來是黏著右邊的兩個按鈕 -->
-          <a href="" class="mr-auto" data-dismiss="modal" data-toggle="modal"
-          data-target="#registerModal">來去註冊</a>
+          <!-- class="mr-auto" 會往左推到底，不然本來是黏著右邊的兩個按鈕 -->
+          <a href="" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">來去註冊</a>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
           <button type="button" class="btn btn-outline-primary">登入</button>
         </div>
@@ -369,7 +368,7 @@
   </div>
 
   <!-- 註冊Modal -->
-<div class="modal fade" id="registerModal" tabindex="-1" role="dialog">
+  <div class="modal fade" id="registerModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header bg-warning text-white">
@@ -379,28 +378,27 @@
           </button>
         </div>
         <div class="modal-body">
-          
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="passwordHelpBlock" class="form-text text-muted">我們絕不會隨意將你的 email 給予第三者</small>
-              </div>
-              <div class="form-group">
-                  <label for="exampleInputPassword1">密碼</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">確認密碼</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-              <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck1">
-                  <label class="custom-control-label" for="customCheck1">同意條款</label>
-                </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="passwordHelpBlock" class="form-text text-muted">我們絕不會隨意將你的 email 給予第三者</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">密碼</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">確認密碼</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">同意條款</label>
+          </div>
         </div>
         <div class="modal-footer">
-            <a href="" class="mr-auto" data-dismiss="modal" data-toggle="modal"
-            data-target="#loginModal">已經有帳號了?直接登入</a>
+          <a href="" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">已經有帳號了?直接登入</a>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
           <button type="button" class="btn btn-outline-warning">註冊</button>
         </div>
@@ -411,67 +409,68 @@
 
 
 
-<!-- footer -->  
-<footer id="aa-footer">
+  <!-- footer -->
+  <footer id="aa-footer">
     <!-- footer bottom -->
     <div class="aa-footer-top p-5 mb-2 bg-dark text-white">
-     <div class="container">
+      <div class="container">
         <div class="row">
-        <div class="col-md-12">
-          <div class="aa-footer-top-area">
-            <div class="row">
-              <div class="col-md-3 col-sm-6">
-                <div class="aa-footer-widget">
-                  <h3>Main Menu</h3>
-                  <ul class="aa-footer-nav" style="list-style-type:none">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">Our Products</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="aa-footer-widget">
+          <div class="col-md-12">
+            <div class="aa-footer-top-area">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
                   <div class="aa-footer-widget">
-                    <h3>Knowledge Base</h3>
-                    <ul class="aa-footer-nav"  style="list-style-type:none">
-                      <li><a href="#">Delivery</a></li>
-                      <li><a href="#">Returns</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Discount</a></li>
-                      <li><a href="#">Special Offer</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="aa-footer-widget">
-                  <div class="aa-footer-widget">
-                    <h3>Useful Links</h3>
+                    <h3>Main Menu</h3>
                     <ul class="aa-footer-nav" style="list-style-type:none">
-                      <li><a href="#">Site Map</a></li>
-                      <li><a href="#">Search</a></li>
-                      <li><a href="#">Advanced Search</a></li>
-                      <li><a href="#">Suppliers</a></li>
-                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Our Services</a></li>
+                      <li><a href="#">Our Products</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Contact Us</a></li>
                     </ul>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="aa-footer-widget">
+                <div class="col-md-3 col-sm-6">
                   <div class="aa-footer-widget">
-                    <h3>Contact Us</h3>
-                    <address>
-                      <p> 25 Astor Pl, NY 10003, USA</p>
-                      <p><span class="fa fa-phone"></span>+1 212-982-4589</p>
-                      <p><span class="fa fa-envelope"></span>dailyshop@gmail.com</p>
-                    </address>
-                    <div class="aa-footer-social">
+                    <div class="aa-footer-widget">
+                      <h3>Knowledge Base</h3>
+                      <ul class="aa-footer-nav" style="list-style-type:none">
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Discount</a></li>
+                        <li><a href="#">Special Offer</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <div class="aa-footer-widget">
+                      <h3>Useful Links</h3>
+                      <ul class="aa-footer-nav" style="list-style-type:none">
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Search</a></li>
+                        <li><a href="#">Advanced Search</a></li>
+                        <li><a href="#">Suppliers</a></li>
+                        <li><a href="#">FAQ</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <div class="aa-footer-widget">
+                      <h3>Contact Us</h3>
+                      <address>
+                        <p> 25 Astor Pl, NY 10003, USA</p>
+                        <p><span class="fa fa-phone"></span>+1 212-982-4589</p>
+                        <p><span class="fa fa-envelope"></span>dailyshop@gmail.com</p>
+                      </address>
+                      <div class="aa-footer-social">
                         <i class="fab fa-facebook-square"></i>
                         <i class="fab fa-twitter"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -480,9 +479,8 @@
           </div>
         </div>
       </div>
-     </div>
-    </div>    
-  <!-- / footer -->
+    </div>
+    <!-- / footer -->
 
 </body>
 
